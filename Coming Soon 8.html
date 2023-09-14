@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://colorlib.com/etc/cs/comingsoon_08/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Coming Soon 8</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="https://colorlib.com/etc/cs/comingsoon_08/images/icons/favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="./Coming Soon 8_files/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" type="text/css" href="./Coming Soon 8_files/font-awesome.min.css"> -->
+
+<!-- <link rel="stylesheet" type="text/css" href="./Coming Soon 8_files/material-design-iconic-font.min.css"> -->
+
+<link rel="stylesheet" type="text/css" href="./Coming Soon 8_files/animate.css">
+
+<link rel="stylesheet" type="text/css" href="./Coming Soon 8_files/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="./Coming Soon 8_files/util.css">
+<link rel="stylesheet" type="text/css" href="./Coming Soon 8_files/main.css">
+<style type="text/css">
+	.typing-text::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .typing-container {
+    font-size: 1.5rem;
+  }
+}
+</style>
+</head>
+<body>
+<div class="bg-img1 overlay1 size1 flex-w flex-c-m p-t-55 p-b-55 p-l-15 p-r-15" style="background-image: url('./Coming Soon 8_files/Batik Lasem Indonesia Hand Drawn Batik Tulis With Floral - Etsy.jpeg');">
+<div class="wsize1">
+<p class="txt-center p-b-23">
+<!-- <i class="zmdi zmdi-card-giftcard cl0 fs-60"></i> -->
+<img src="./Coming Soon 8_files/Orchid_Art.png" width="60">
+</p>
+<h3 class="l1-txt1 txt-center p-b-22">
+Waktu dekat
+</h3>
+<p class="txt-center m2-txt1 p-b-67">
+<span class="typing-text">k</span>
+</p>
+<div class="flex-w flex-sa-m cd100 bor1 p-t-42 p-b-22 p-l-50 p-r-50 respon1">
+<div class="flex-col-c-m wsize2 m-b-20">
+<span class="l1-txt2 p-b-4 days" id="days">35</span>
+<span class="m2-txt2">Hari</span>
+</div>
+<span class="l1-txt2 p-b-22">:</span>
+<div class="flex-col-c-m wsize2 m-b-20">
+<span class="l1-txt2 p-b-4 hours" id="hours">17</span>
+<span class="m2-txt2">Jam</span>
+</div>
+<span class="l1-txt2 p-b-22 respon2">:</span>
+<div class="flex-col-c-m wsize2 m-b-20">
+<span class="l1-txt2 p-b-4 minutes" id="minutes">54</span>
+<span class="m2-txt2">Menit</span>
+</div>
+<span class="l1-txt2 p-b-22">:</span>
+<div class="flex-col-c-m wsize2 m-b-20">
+<span class="l1-txt2 p-b-4 seconds" id="seconds">44</span>
+<span class="m2-txt2">Detik</span>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="./Coming Soon 8_files/jquery-3.2.1.min.js"></script>
+
+<script src="./Coming Soon 8_files/popper.js"></script>
+<script src="./Coming Soon 8_files/bootstrap.min.js"></script>
+<script src="./Coming Soon 8_files/main.js"></script>
+<script src="./Coming Soon 8_files/typing-script.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.23/moment-timezone.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.23/moment-timezone-with-data.min.js'></script>
+
+<script type="text/javascript">
+const days1 =document.querySelector("#days")
+const hours1 =document.querySelector("#hours")
+const minutes1 =document.querySelector("#minutes")
+const seconds1  =document.querySelector("#seconds")
+const newYears = moment.tz("2023-10-21 09:00:59", "Asia/Jakarta");
+
+function countdown(){
+    const newYearsDate = new Date(newYears);
+    const currentDate = new Date();
+
+    const totalSeconds = (newYearsDate-currentDate)/1000;
+    const days = Math.floor(totalSeconds / 3600 / 24);
+    const hours = Math.floor(totalSeconds / 3600 ) % 24;
+    const minutes = Math.floor(totalSeconds / 60 ) % 60;
+    const seconds = Math.floor(totalSeconds % 60);
+    
+    
+   days1.innerHTML =   formatTime( days);
+   hours1.innerHTML =  formatTime( hours);
+   minutes1.innerHTML =formatTime(  minutes);
+   seconds1.innerHTML =formatTime(  seconds);
+    // console.log(seconds)
+    // console.log(minutes)
+    // console.log(hours)
+    
+}
+countdown();
+
+function formatTime(time){
+    return time < 10 ? `0${time}` : time;
+}
+setInterval(countdown,1000);
+
+</script>
+
+
+
+</body></html>
