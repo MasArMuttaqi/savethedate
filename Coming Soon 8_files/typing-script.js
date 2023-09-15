@@ -1,5 +1,5 @@
 var typingElement = document.querySelector(".typing-text");
-var typeArray = ["Riza", "Aftina", "menikah", "membangun rumah tangga"];
+var typeArray = ["Sabtu, 21 Oktober 2023", "Riza", "Aftina", "menikah", "membangun rumah tangga"];
 var index = 0,
   isAdding = true,
   typeIndex = 0;
