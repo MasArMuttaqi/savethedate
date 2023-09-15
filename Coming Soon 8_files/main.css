@@ -13,8 +13,9 @@ Primary use:
 
 
 @font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+/*   font-family: Poppins-Regular; */
+/*   src: url('../fonts/Poppins/Poppins-Regul÷ar.ttf');  */
+  font-family: 'Playfair Display', serif;
 }
 
 @font-face {
